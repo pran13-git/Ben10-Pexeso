@@ -1,0 +1,31 @@
+
+h1{
+    text-align: center;
+}
+
+.card{
+    margin:10px;
+    width: 150px;
+    height: 150px;
+    display:inline-block;
+    background-color: lightblue;
+    border: 2px solid black;
+    /* border-radius: 10px; */
+    /* box-shadow: 2px 2px 5px;  */
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+button{
+    font-size: large;
+    margin-left:20px;
+}
+
+body{
+    color:white;
+}
+

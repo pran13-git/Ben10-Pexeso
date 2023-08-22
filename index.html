@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Memory Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body style="background-color: black;">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="title">
+            <h1>Memory Game</h1>
+        </div>
+
+		<div style="margin-left:40%">
+			<label for="diff">Difficulty:</label>
+			<select name="diff" id="diff">
+				<option value=1>Easy</option>
+				<option value=2>Maybe easy?</option>
+				<option value=3>Definitely not easy</option>
+			  </select>
+
+			  <button type="button" onclick="start()">Start</button>
+		</div>
+
+        <div id="board" style="display:none">
+			<div>
+				<div class="card"><img id="img1" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img2" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+			    <div class="card"><img id="img3" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img4" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+            </div>
+			<div>
+				<div class="card"><img id="img5" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img6" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img7" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img8" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+			</div>
+			<div>
+				<div class="card"><img id="img9" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img10" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+			    <div class="card"><img id="img11" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img12" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+			</div>
+			<!-- <div>
+				<div class="card"><img id="img13" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img14" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img15" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+				<div class="card"><img id="img16" src="images/tile.jpg" height="150px" width="150px" onclick="flip(this.id)"></div>
+			</div> -->
+        </div>
+
+		<div>
+			<h4 id="timer" style="display:none">timer:</h4>
+			<h4 id="score" style="display:none">score:</h4>
+			<h3 id="gameover" style="display:none"></h3>
+		</div>
+        <script src="" async defer></script>
+    </body>
+</html>
